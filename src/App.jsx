@@ -131,7 +131,7 @@ function App() {
                     ( 
                     <div className='calender-item' key={item}>
                       {item.map((values) => (
-                       (<p style={{color: values === "NA" ? "transparent" : values === 25 ? "black" : "white" , backgroundColor : values === 25 ? "white" : "transparent", borderRadius: "999px"}} className = "calender-item" key={values}>{values}</p>)
+                       (<p style={{color: values === "NA" ? "transparent" : values === 25 ? "black" : "white" , backgroundColor : values === 25 ? "white" : "transparent", borderRadius: "50%", padding: "2"}} className = "calender-item" key={values}>{values}</p>)
                       ))}
                     </div>
                     )
