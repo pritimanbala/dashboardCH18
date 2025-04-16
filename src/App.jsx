@@ -81,12 +81,12 @@ function App() {
               <div className="one-right">
                 <CiWallet size={50} />
                 <p style={{fontSize: "1rem", whiteSpace: "nowrap"}}>Your Bank Balance</p>
-                <p style={{fontSize:"1.5rem", fontWeight: '500'}}>$123,456</p>
+                <p style={{fontSize:"1.5rem", fontWeight: '500', margin: "0"}}>₹123,456</p>
               </div>
               <div className="one-left">
                 <BsSpeedometer size={50} />
                 <p>Expenditure Average</p>
-                <p style={{fontSize:"1.5rem", fontWeight: '500', color:"#a60b32"}}>High</p>
+                <p style={{fontSize:"1.5rem", fontWeight: '500', color:"#a60b32", margin: "0"}}>High</p>
               </div>
             </div>
             <div className="two">
@@ -96,7 +96,7 @@ function App() {
               <div className="task-grid">
                 {todo.map((task) => (
                   <div className='task' key={{task}.id}>
-                    <task.icon className='icon' color='white' size={70} style={{padding: "1rem", borderRadius: "15px" , backgroundColor: 'black'}}/>
+                    <task.icon className='icon' color='white' size={40} style={{padding: "1rem", borderRadius: "15px" , backgroundColor: 'black'}}/>
                     <div className="mid">
                       <p className='sml-2'>{task.title}</p>
                       <p>{task.time}</p>
@@ -131,7 +131,7 @@ function App() {
                     ( 
                     <div className='calender-item' key={item}>
                       {item.map((values) => (
-                       (<p style={{color: values === "NA" ? "transparent" : values === 25 ? "black" : "white", padding: "10px" , backgroundColor : values === 25 ? "white" : "transparent", borderRadius: "999px"}} className = "calender-item" key={values}>{values}</p>)
+                       (<p style={{color: values === "NA" ? "transparent" : values === 25 ? "black" : "white" , backgroundColor : values === 25 ? "white" : "transparent", borderRadius: "999px"}} className = "calender-item" key={values}>{values}</p>)
                       ))}
                     </div>
                     )
@@ -139,12 +139,20 @@ function App() {
                 </div> 
               </div>
               <div className='two-wth'>
-                <h1 className='wth-h1'>
+                <div className="text">
+                  <h1 className='wth-h1'>
+                    Chennai
+                  </h1>
+                  <p className="wth-p">
+                    Cloudy 298K
+                  </p>
+                </div>
+                {/* <h1 className='wth-h1'>
                   Chennai
                 </h1>
                 <p className="wth-p">
                   Cloudy 298K
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
