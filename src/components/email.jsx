@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsFillPersonFill } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 function Email() {
     const emails = [{
@@ -34,12 +35,12 @@ function Email() {
                 Recent Emails
               </h1>
               {emails.map((email) => (
-                <div className='email' key={email.id} >
+                <motion.div whileHover={{scale: 1.05}} whileTap={{scale: 0.95}} className='email' key={email.id} >
                   <BsFillPersonFill size={30} />
                     <p className='sml-3'>{email.from}</p>
                     <p>{email.subject}</p>
                     <p>{email.time}</p>
-                </div>
+                </motion.div>
               ))}
          
     </div>

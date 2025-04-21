@@ -3,6 +3,7 @@ import { MdLocalGroceryStore } from "react-icons/md";
 import { MdLocalLaundryService } from "react-icons/md";
 import { FaFileAlt } from "react-icons/fa";
 import { CgGym } from "react-icons/cg";
+import { motion } from "framer-motion";
 
 function Todo() {
     const todo = [{
@@ -39,7 +40,9 @@ function Todo() {
         To Do List
         </h1>
         <div className="task-grid">
+          
             {todo.map((task) => (
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <div className='task' key={{task}.id}>
                 <task.icon className='icon' color='white' size={40} style={{padding: "1rem", borderRadius: "15px" , backgroundColor: 'black'}}/>
                 <div className="mid">
@@ -47,6 +50,7 @@ function Todo() {
                     <p>{task.time}</p>
                 </div>
                 </div>
+            </motion.div>
             ))}
         </div>
     </div>

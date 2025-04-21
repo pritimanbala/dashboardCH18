@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { getWeather } from '../api/weather';
+import {motion} from "framer-motion";
 function Calender() {
     const list = [["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"], [1, 2, 3, 4, 5, 6, 7],[ 8, 9, 10,
         11, 12, 13, 14], [15, 16, 17, 18, 19, 20, 21], [22, 23, 24, 25, 26, 27, 28],
@@ -22,7 +23,7 @@ function Calender() {
             month = monthNames[month - 1];
   return (
    
-    <div className="two-cal">
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className='two-cal'>
         <h1 className='cal-h1'>
             {month}
         </h1>
@@ -37,7 +38,7 @@ function Calender() {
             )
             )}
         </div> 
-    </div>
+        </motion.div>
     
   )
 }

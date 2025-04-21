@@ -29,6 +29,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     color: #222;
+    width: fit-content;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 .sml-1{
@@ -62,14 +63,10 @@
   width: calc(fit-content + 1rem);
   background-color: #d0e0ec;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
   margin-left: 2rem;
-}
-.one-right:hover{
-  transform: scale(1.05);
+  cursor: pointer;
 }
 .one-left{
-  
   display: flex;
   align-items: start;
   justify-content: center;
@@ -81,11 +78,8 @@
   margin: 1rem 0;
   background-color: #d0e0ec;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
   margin-left: 2rem;
-}
-.one-left:hover{
-  transform: scale(1.05);
+  cursor: pointer;
 }
 .two{
   margin: 0 0;
@@ -102,12 +96,10 @@
   margin: 0 0;
   gap: 0.5rem;
   grid-auto-rows: 150px;
-  transition: transform 0.2s ease;
   padding: 0rem 2rem;
   border-radius: 15px;
 }
 .task:hover{
-  transform: scale(1.05);
   background-color: #d0e0ec;
 }
 
@@ -137,12 +129,10 @@
   width: 100%;
   gap: 1rem;
   grid-auto-rows: 75px;
-  transition: transform 0.2s ease;
   padding: 0rem 0.5rem;
   border-radius: 5px;
 }
 .email:hover{
-  transform: scale(1.05);
   background-color: #b7c6d1;
 }
 .sml-3{
@@ -194,12 +184,8 @@
   border-radius: 15px;
   font-size: 1.5rem;
   text-align: center;
-  transition: transform 0.2s ease;
 }
 
-.two-cal:hover{
-  transform: scale(1.05);
-}
 .wth-h1{
   font-size: 2rem;
   font-weight: 500;
@@ -222,11 +208,6 @@
   margin: 0.5rem 0;
   background: url(/clouds.jpg) no-repeat;
   background-size: cover;
-  transition: transform 0.2s ease;
-}
-
-.two-wth:hover{
-  transform: scale(1.05);
 }
 
 
@@ -262,11 +243,13 @@
     min-width: fit-content;
   }
   .one-left{
-    width: 45%;
+    width: 100%;
     min-width: fit-content;
+    margin: 0.5rem 0;
   }
   .one-right{
-    width: 45%;
+    width: 100%;
+    margin: 0.5rem 0;
   }
   .left{
     width: 100%;
