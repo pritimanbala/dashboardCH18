@@ -122,6 +122,7 @@
 }
 
 .email{
+
   display: grid; 
   align-items: center;
   grid-template-columns: repeat(5, 1fr);
